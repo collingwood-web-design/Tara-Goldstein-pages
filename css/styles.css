@@ -955,6 +955,14 @@ blockquote h2 {
   height: auto;
 }
 
+.song-media {
+  margin: 0;
+}
+
+.song-media .credit {
+  margin-top: 8px;
+}
+
 .song-credits {
   margin: 0;
 }
