@@ -1,0 +1,5 @@
+﻿# Client preview only — source of truth is the private Tara-Goldstein repo.
+.env
+.env.*
+_tmp-media/
+.wrangler/
