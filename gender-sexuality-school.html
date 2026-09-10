@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en-CA">
 <head>
+    <script>
+      /* Prefer clean URLs when someone lands on the .html form. */
+      (function () {
+        var path = window.location.pathname;
+        if (!/\.html$/i.test(path)) return;
+        var clean = path.replace(/\.html$/i, "");
+        if (/\/index$/i.test(clean)) clean = clean.replace(/\/index$/i, "/") || "/";
+        if (clean === "") clean = "/";
+        window.location.replace(clean + window.location.search + window.location.hash);
+      })();
+    </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Gender. Sexuality. School. — Tara Goldstein’s podcast featuring interviews with researchers working on gender, sexuality and schooling.">
   <meta name="author" content="Tara Goldstein">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="theme-color" content="#699b06">
-  <link rel="canonical" href="https://taragoldstein.com/gender-sexuality-school.html">
+  <link rel="canonical" href="https://taragoldstein.com/gender-sexuality-school">
   <meta property="og:locale" content="en_CA">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Tara Goldstein">
   <meta property="og:title" content="Gender•Sexuality•School | Tara Goldstein">
   <meta property="og:description" content="Gender. Sexuality. School. — Tara Goldstein’s podcast featuring interviews with researchers working on gender, sexuality and schooling.">
-  <meta property="og:url" content="https://taragoldstein.com/gender-sexuality-school.html">
+  <meta property="og:url" content="https://taragoldstein.com/gender-sexuality-school">
   <meta property="og:image" content="https://media.cwd-cdn.com/tara-goldstein/images/lgbtq-fam-banner.jpg">
   <title>Gender•Sexuality•School | Tara Goldstein</title>
   <link rel="icon" href="https://media.cwd-cdn.com/tara-goldstein/images/favicon.jpg" type="image/jpeg">
@@ -28,43 +40,43 @@
   <a class="skip" href="#content">Skip to content</a>
   <header class="site-header">
     <div class="header-inner">
-      <a class="logo" href="index.html"><img src="https://media.cwd-cdn.com/tara-goldstein/images/logo.png" alt="Tara Goldstein" width="500" height="130"></a>
+      <a class="logo" href="./"><img src="https://media.cwd-cdn.com/tara-goldstein/images/logo.png" alt="Tara Goldstein" width="500" height="130"></a>
       <ul class="primary-nav" aria-label="Primary">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="bio.html">Bio</a></li>
-        <li><a href="books.html">Books</a></li>
-        <li><a href="plays.html">Plays</a></li>
-        <li><a href="theatre.html">Theatre</a></li>
+        <li><a href="./">Home</a></li>
+        <li><a href="bio">Bio</a></li>
+        <li><a href="books">Books</a></li>
+        <li><a href="plays">Plays</a></li>
+        <li><a href="theatre">Theatre</a></li>
         <li class="has-sub is-current"><a href="#">Audio</a>
           <ul class="sub-menu">
-            <li><a href="audio-plays.html">Audio-Plays</a></li>
+            <li><a href="audio-plays">Audio-Plays</a></li>
             <li class="sub-label">Podcast</li>
-            <li class="is-current"><a href="gender-sexuality-school.html">Gender•Sexuality•School</a></li>
+            <li class="is-current"><a href="gender-sexuality-school">Gender•Sexuality•School</a></li>
             <li class="sub-label">Audio-Books</li>
-            <li><a href="home-of-her-heart-audio-book.html">Home of Her Heart</a></li>
+            <li><a href="home-of-her-heart-audio-book">Home of Her Heart</a></li>
           </ul>
         </li>
-        <li><a href="research.html">Research</a></li>
+        <li><a href="research">Research</a></li>
       </ul>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Menu"><span class="nav-toggle-label" data-open="Menu" data-close="X">Menu</span></button>
     </div>
     <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="bio.html">Bio</a></li>
-        <li><a href="books.html">Books</a></li>
-        <li><a href="plays.html">Plays</a></li>
-        <li><a href="theatre.html">Theatre</a></li>
+        <li><a href="./">Home</a></li>
+        <li><a href="bio">Bio</a></li>
+        <li><a href="books">Books</a></li>
+        <li><a href="plays">Plays</a></li>
+        <li><a href="theatre">Theatre</a></li>
         <li class="has-sub is-current"><a href="#">Audio</a>
           <ul class="sub-menu">
-            <li><a href="audio-plays.html">Audio-Plays</a></li>
+            <li><a href="audio-plays">Audio-Plays</a></li>
             <li class="sub-label">Podcast</li>
-            <li class="is-current"><a href="gender-sexuality-school.html">Gender•Sexuality•School</a></li>
+            <li class="is-current"><a href="gender-sexuality-school">Gender•Sexuality•School</a></li>
             <li class="sub-label">Audio-Books</li>
-            <li><a href="home-of-her-heart-audio-book.html">Home of Her Heart</a></li>
+            <li><a href="home-of-her-heart-audio-book">Home of Her Heart</a></li>
           </ul>
         </li>
-        <li><a href="research.html">Research</a></li>
+        <li><a href="research">Research</a></li>
       </ul>
     </nav>
   </header>
@@ -363,7 +375,7 @@
 <div class="episode">
 <p><strong>S5- EPISODE 3 – HOME OF HER HEART</strong></p>
 <p>Goldstein, Tara and Friesen, Doug (Producers). (2023, June 21).</p>
-<p>Guest Host Jenny Salisbury talks to Tara about her novel Home of Her Heart a story for anyone who has ever left “home,” is looking for a home to belong to or is interested for what makes a home. To read more about Home of Her Heart <a href="books.html" target="_blank" rel="noopener"><strong>CLICK HERE</strong></a></p>
+<p>Guest Host Jenny Salisbury talks to Tara about her novel Home of Her Heart a story for anyone who has ever left “home,” is looking for a home to belong to or is interested for what makes a home. To read more about Home of Her Heart <a href="books" target="_blank" rel="noopener"><strong>CLICK HERE</strong></a></p>
 </div>
           </div>
         </details>
@@ -399,7 +411,7 @@
   </main>
   <footer class="site-footer">
     <div class="footer-bottom">
-      <div class="wrap">Copyright © 2026 <a href="index.html">Tara Goldstein</a> | design &amp; develop <a href="https://collingwoodwebdesign.com" target="_blank" rel="noopener">collingwood web design</a></div>
+      <div class="wrap">Copyright © 2026 <a href="./">Tara Goldstein</a> | design &amp; develop <a href="https://collingwoodwebdesign.com" target="_blank" rel="noopener">collingwood web design</a></div>
     </div>
   </footer>
   <script src="js/site.js?v=3"></script>
